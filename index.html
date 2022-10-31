@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pay Me </title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <section>
       <nav>
-        <img src="./HTML Practise Assets/FES.svg" alt="" />
+        <img src="./HTML Practise Assets/FES.svg" class="logo" alt="" />
         <ul>
           <li>
             <a href="About"> About</a>
@@ -19,36 +20,38 @@
         </ul>
       </nav>
       <header>
-        <div>
+      <div class="row">
+        <div class="Home__Description" >
           <h1>Best Place to Learn Front End</h1>
-          <p>
-            Go from being an absolute begineerto pro with a simplified process
-          </p>
-          <button>Start now</button>
+          <p class="subheader"> Go from being an absolute begineerto pro with a simplified process </p>
+          <button  class="home__description--button">Start now</button>
         </div>
         <figure>
           <img src="./HTML Practise Assets/laptop.png" alt="Home Page Image" />
         </figure>
+      </div>
       </header>
     </section>
     <main>
       <section id="About">
         <h2>About</h2>
-        <div>
-          <p>
+        <div class="section__description">
+        <div class="section__description--wrapper">
+          <p class="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             velit voluptate porro quaerat quibusdam animi laboriosam aperiam, ex
             quasi fuga earum? Iusto eum cupiditate cum numquam quod hic
             perferendis tempore.
           </p>
-          <p>
+          <p class="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
             nesciunt repellendus nulla expedita, repudiandae tenetur cum hic
             fugiat ipsa sit dicta et cumque officiis illum. Laboriosam
             repudiandae ex perspiciatis illum?
           </p>
         </div>
-        <figure><img src="./HTML Practise Assets/about.jpg" /></figure>
+        <figure class="about__img--wrapper"><img src="./HTML Practise Assets/about.jpg" /></figure>
+       </div>
       </section>
 
       <section id="Discord">
@@ -75,23 +78,25 @@
       <section id="Contact">
         <h2>Contact</h2>
         <form action="">
-    
-    <span>Email</span>
-    <input type="text">
-    <div>
-    <span>Message</span>
-    <textarea name="" id="" cols="50" rows="20"></textarea>
-    </div>
-    <button>Submit</button>
-        </form>
+          <span>Email</span>
+          <input type="email" placeholder="jane@example.com">
+            <span>Message</span>
+            <textarea type="text" placeholder="Let's get connected"></textarea>
+            <button>Contact Us!</button>
+            </form>
       </section>
     </main>
-    <div>
-    <footer>
-    <img src="./HTML Practise Assets/FES.svg">
-    <div> <a href="About">About</a> <a href="Projects">Projects</a> <a href="Discord">Discord</a> <a href="Courses">Courses</a></div>
-    <p>Copy right Front End simplified</p>
-    </footer>
+    
+      <footer>
+        <img class="Footer__logo" src="./HTML Practise Assets/FES.svg" />
+        <div class="Footer__links">
+          <a class="Footer__link" href="#About">About</a>
+          <a class="Footer__link" href="#Discord">Discord</a>
+          <a class="Footer__link" href="#Contact">Contact</a>
+          <a class="Footer__link"  href="">Courses</a>
+        </div>
+        <p>Copy right Front End simplified</p>
+      </footer>
     </div>
   </body>
 </html>
